@@ -1,43 +1,40 @@
 /* Show Menu */
-const navMenu = document.getElementById('nav-menu')
-const navToggle = document.getElementById('nav-toggle')
-const navClose = document.getElementById('nav-close')
+const navMenu = document.getElementById('nav-menu');
+const navToggle = document.getElementById('nav-toggle');
+const navClose = document.getElementById('nav-close');
 
 if (navToggle) {
     navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu')
+        navMenu.classList.add('show-menu');
     })
 }
 
 /* Hidden menu */
 if (navClose) {
     navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu')
+        navMenu.classList.remove('show-menu');
     })
 }
 
 /* Remove Menu Modile */
-const navLink = document.querySelectorAll('.nav__link')
-
+const navLink = document.querySelectorAll('.nav__link');
 function linkAction() {
-    const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show-menu')
+    navMenu.classList.remove('show-menu');
 }
-
-navLink.forEach(n => n.addEventListener('click', linkAction))
+navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /* Change Background Header */
 function scrollHeader() {
-    const header = document.getElementById('header')
+    const header = document.getElementById('header');
 
     if (this.scrollY >= 100) {
-        header.classList.add('scroll-header')
+        header.classList.add('scroll-header');
     } else {
-        header.classList.remove('scroll-header')
+        header.classList.remove('scroll-header');
     }
 }
 
-window.addEventListener('scroll', scrollHeader)
+window.addEventListener('scroll', scrollHeader);
 
 /* Swiper Discover Section */
 var swiper = new Swiper(".discover__container", {
