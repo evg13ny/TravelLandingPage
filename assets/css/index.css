@@ -227,7 +227,7 @@ input {
     cursor: pointer;
 }
 
-/* Show menu */
+/* Show Menu */
 .show-menu {
     right: 0;
 }
@@ -378,10 +378,50 @@ input {
     transition: var(--img-transition);
 }
 
-.about__img-one:ho\, .about__img-two:hover {
+.about__img-one:hover, .about__img-two:hover {
     transform: var(--img-scale);
 }
 
 .about__title {
     text-transform: capitalize;
+}
+
+/* Discover Section */
+.discover__card {
+    position: relative;
+    width: 200px;
+    overflow: var(--img-hidden);
+}
+
+.discover__data {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1rem;
+}
+
+.discover__title, .discover__description {
+    color: var(--white-color);
+}
+
+.discover__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.discover__description {
+    display: block;
+    font-size: var(--smaller-font-size);
+}
+
+.discover__img {
+    transition: var(--img-transition);
+}
+
+.discover__img:hover {
+    transform: var(--img-scale);
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: none;
 }
