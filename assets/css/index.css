@@ -118,6 +118,10 @@ input {
     outline: none;
 }
 
+.main{
+    overflow-x: hidden;
+}
+
 /* Reusable CSS Classes */
 .section {
     padding: 4.5rem 0 2.5rem;
